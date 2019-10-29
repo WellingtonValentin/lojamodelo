@@ -1,0 +1,627 @@
+/*  GERAIS  */
+body{
+    font-size: 10px !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    background: #f3f2f2 !important;
+}
+h1, h2, h3, h4, h5, p{
+    line-height: 100%;
+}
+#preloader {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff; /* change if the mask should have another color then white */
+    z-index:99; /* makes sure it stays on top */
+}
+#preloader-status {
+    display: none;
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../_image/padrao/status.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+
+/*  HEADER  */
+#cabecalho > .container,
+#home > .container{
+    background: #FFF;
+}
+#cabecalho .logo{
+    height: auto !important;
+    margin: 20px 0px 40px 20px;
+}
+#cabecalho nav{
+    margin-top: 30px;
+}
+#cabecalho nav > ul > li{
+    margin-right: 15px;
+}
+#cabecalho nav > ul > li > a:hover,
+#cabecalho > .container > .row:nth-of-type(2) a:hover{
+    color: #ED1C24 !important;
+}
+#cabecalho .quadro-form-busca{
+    height: 45px;
+    margin-top: 25px;
+    padding: 2px;
+    border-radius: 20px;
+    border: solid 1px #d8dce2;
+}
+#cabecalho .quadro-form-busca .form-control{
+    width: 250px;
+    height: 39px;
+    float: left;
+    border-color: transparent;
+    box-shadow: none;
+    margin-left: 10px;
+}
+#cabecalho .quadro-form-busca .btn{
+    width: 95px;
+    height: 39px;
+    float: right;
+    border-radius: 18px;
+    border-color: transparent;
+    background: #ed1c24;
+}
+#cabecalho .quadro-carrinho{
+    width: 100%;
+    height: 45px;
+    padding-top: 10px;
+    margin-top: 25px;
+    border-radius: 20px;
+    border: solid 1px #d8dce2;
+    background: #ed1c24;
+}
+#cabecalho > .container > .row:nth-of-type(2){
+    padding: 15px 0px;
+    background: #242424;
+}
+#cabecalho .quadro-login{
+    display: none;
+    min-width: 255px;
+    min-height: 170px;
+    padding: 20px 10px;
+    border-radius: 4px;
+    position: absolute;
+    top: 100%;
+    right: -50px;
+    z-index: 3;
+    background: url('../_image/fundo-login.jpg');
+    background-size: 100% 100%;
+    border: solid 2px #DDD;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+#cabecalho .quadro-sub-cat{
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: 9999;
+    background: #242424;
+    padding: 10px;
+}
+#cabecalho .quadro-sub-cat a{
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    border-bottom: solid 1px #1f1f1f;
+}
+
+
+/*  HOME    */
+#home .quadro-banner-secundario{
+    width: 25%;
+    height: 70px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    background: #242424;
+}
+#home #menu-lateral > nav > ul > li {
+    margin: 5px 0px;
+}
+#home #menu-lateral > nav > ul > li .quadro-check{
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+    float: left;
+    border: solid 1px #b2c6cd;
+    border-radius: 3px;
+    padding: 0px 2px;
+}
+#home #menu-lateral > nav > ul > li > a:hover{
+    color: #364347 !important;
+}
+#home .quadro-produto{
+    min-height: 450px;
+}
+#home .quadro-produto .quadro-imagem{
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    position: relative;
+}
+#home select.form-control{
+    border-radius: 17px;
+}
+#home .quadro-newsletter{
+    padding: 25px 0px;
+    background: #ed1c24;
+}
+#home .quadro-newsletter i{
+    display: block;
+    margin-top: -7px;
+}
+#home .quadro-newsletter .btn{
+    width: 95px;
+    height: 39px;
+    float: right;
+    border-radius: 18px;
+    border-color: transparent;
+    background: #373737;
+}
+#home .quadro-newsletter .form-control{
+    width: 150px;
+    height: 39px;
+    float: left;
+    border-color: transparent;
+    box-shadow: none;
+    margin-left: 10px;
+}
+#home .quadro-newsletter .input-group{
+    height: 45px;
+    margin-top: 15px;
+    padding: 2px;
+    border-radius: 20px;
+    border: solid 1px #d8dce2;
+    background: #FFF;
+}
+
+
+/*  RODAPÉ  */
+#rodape {
+    padding: 50px 0px 25px 0px;
+}
+#rodape .icone{
+    display: block;
+    float: left;
+    margin-bottom: -5px;
+    margin-right: 5px;
+}
+#rodape nav > ul > li > a:hover{
+    color: #fd0202 !important;
+}
+
+
+/*  INTERNAS    */
+/* PÁGINA DE PRODUTOS */
+#conteudo .container{
+    background: #FFF;
+    padding-bottom: 15px;
+}
+#pagina-interna .container > .row{
+    background: #FFF;
+    padding-bottom: 15px;
+}
+#pagina-interna.pagina-produto > .container > .row:nth-of-type(2){
+    margin: 0px;
+    padding: 10px;
+    border: solid 1px #DDD;
+    border-radius: 4px;
+}
+#pagina-interna.pagina-produto .quadro-estrelas{
+    margin-top: 10px;
+}
+#pagina-interna.pagina-produto .estrela-avaliacao{
+    float: left;
+    background: #F7941D;
+    color: #FFF;
+    padding: 3px 5px;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+#pagina-interna.pagina-produto .estrela-metade{
+    background: #f7941d; /* Old browsers */
+    background: -moz-linear-gradient(left,  #f7941d 50%, #d1d1d1 50%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%,#f7941d), color-stop(50%,#d1d1d1)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #f7941d 50%,#d1d1d1 50%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #f7941d 50%,#d1d1d1 50%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #f7941d 50%,#d1d1d1 50%); /* IE10+ */
+    background: linear-gradient(to right,  #f7941d 50%,#d1d1d1 50%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7941d', endColorstr='#d1d1d1',GradientType=1 ); /* IE6-9 */
+}
+#pagina-interna.pagina-produto .estrela-inativa{
+    background: #D1D1D1;
+}
+#pagina-interna.pagina-produto .quadro-estrelas small{
+    margin-top: 20px;
+}
+#pagina-interna.pagina-produto .quadro-galeria{
+    height: 320px;
+    overflow: hidden;
+}
+#pagina-interna.pagina-produto .quadro-galeria .img-thumbnail{
+    margin-bottom: 10px;
+}
+#pagina-interna.pagina-produto .foto-produto-principal{
+    width: 100%;
+    margin: 10px 0px;
+    border-left: solid 1px #DDD;
+    position: relative;
+    overflow: hidden;
+}
+body .zoomContainer{
+    overflow: hidden;
+}
+#pagina-interna.pagina-produto .foto-produto-principal .quadro-ampliar-imagem{
+    width: 150px;
+    height: 40px;
+    padding: 5px 10px;
+    background: #F6F6F6;
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    z-index: 8;
+    opacity: 0.5;
+    filter: alpha(opacity=50); 
+}
+#pagina-interna.pagina-produto .foto-produto-principal .quadro-ampliar-imagem div{
+    float: left !important;
+    padding: 0px !important;
+    padding-left: 8px !important;
+}
+#pagina-interna.pagina-produto .foto-produto-principal .quadro-ampliar-imagem i{
+    font-size: 22px;
+}
+#pagina-interna.pagina-produto .quadro-valor-produto{
+    margin-top: 10px;
+}
+#pagina-interna.pagina-produto .quadro-valor-produto{
+    background: #F4F4F4;
+    padding: 10px;
+}
+#pagina-interna.pagina-produto .quadro-valor-produto .quadro-frete-gratis{
+    float: left;
+    padding: 5px;
+    border-radius: 4px;
+    background: #E60014;
+    margin-bottom: 10px;
+}
+#pagina-interna.pagina-produto .parcelamento{
+    background: #FFF !important;
+}
+#pagina-interna.pagina-produto .aguarda-liberacao{
+    display: none;
+}
+
+
+/* VARIAÇÕES DA PÁGINA DO PRODUTO */
+#pagina-interna.pagina-produto #variacoes-produto ul,#conteudo #variacoes-produto li{
+    display: block;
+    float: left;
+}
+#pagina-interna.pagina-produto #variacoes-produto ul{
+    width: 100%;
+    margin-bottom: 20px;
+}
+#pagina-interna.pagina-produto #variacoes-produto .titulo-variacao{
+    width: 100%;
+    margin-bottom: 10px; 
+}
+#pagina-interna.pagina-produto #variacoes-produto .variacao-opcao{
+    background: #FFF;
+    min-width: 40px;
+    height: 40px;
+    display: block;
+    float: left;
+    border: solid 1px #c9c9c9;
+    padding: 5px;
+    border-radius: 2px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#pagina-interna.pagina-produto #variacoes-produto .variacao-opcao:hover{
+    border: solid 1px #000;
+}
+#pagina-interna.pagina-produto #variacoes-produto .variacao-opcao.disponivel{
+    border: solid 2px #5cb85c;
+}
+#pagina-interna.pagina-produto #variacoes-produto .variacao-opcao.indisponivel{
+    border: solid 1px #d9534f;
+    opacity: 0.5;
+}
+#pagina-interna.pagina-produto #variacoes-produto ul{
+    padding: 10px;
+    margin-bottom: 0px;
+    background: #FFF;
+}
+#pagina-interna.pagina-produto .quadro-compra-produto-flutuante{
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    bottom: 0px;
+    left: 15px;
+    z-index: 10;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+}
+#pagina-interna.pagina-produto .quadro-compra-produto-flutuante .col-xs-12, .quadro-compra-produto-flutuante .col-xs-6, .quadro-compra-produto-flutuante .row{
+    height: 40px !important;
+    padding: 0px !important;
+}
+#pagina-interna.pagina-produto .icone-seta-cima-produto-flutuante{
+    border: solid 2px #FFF;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: -12px;
+    margin-left: -12px;
+    padding: 2px;
+    font-size: 14px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding-right: 3px;
+}
+#pagina-interna.pagina-produto .quadro-compra-produto-flutuante #valorPor-2{
+    font-size: 1em;
+    line-height: 1em;
+}
+#pagina-interna.pagina-produto .quadro-compra-produto-flutuante #textoParcelamento{
+    font-size: 0.4em !important;
+    line-height: 0.4em !important;
+    display: block;
+}
+#pagina-interna.pagina-produto .quadro-compra-produto-flutuante .quadro-comprar{
+    line-height: 40px !important;
+}
+
+
+/* QUADRO DE INFORMAÇÕES DO PRODUTO */
+#quadro-informacoes .container{
+    background: #FFF;
+    padding-bottom: 15px;
+}
+#quadro-informacoes .texto-informacao{
+    padding: 15px;
+    border-left: solid 1px #DDD;
+    border-right: solid 1px #DDD;
+    border-bottom: solid 1px #DDD;
+    border-radius: 0 0 4px 4px;
+}
+
+
+/* QUADRO DE AVALIAÇÃO DO PRODUTO */
+#quadro-avaliacao .quadro-pesquisa{
+    border: solid 1px #DDD;
+    padding: 15px 10px;
+}
+#quadro-avaliacao .estrela-avaliacao{
+    float: left;
+    background: #F7941D;
+    color: #FFF;
+    padding: 3px 5px;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+#quadro-avaliacao .estrela-inativa{
+    background: #D1D1D1;
+}
+#quadro-avaliacao .estrela-metade{
+    background: #f7941d; /* Old browsers */
+    background: -moz-linear-gradient(left,  #f7941d 50%, #d1d1d1 50%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%,#f7941d), color-stop(50%,#d1d1d1)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #f7941d 50%,#d1d1d1 50%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #f7941d 50%,#d1d1d1 50%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #f7941d 50%,#d1d1d1 50%); /* IE10+ */
+    background: linear-gradient(to right,  #f7941d 50%,#d1d1d1 50%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7941d', endColorstr='#d1d1d1',GradientType=1 ); /* IE6-9 */
+}
+#quadro-avaliacao .quadro-pro-contra{
+    height: auto;
+    border: solid 1px #DDD;
+    padding: 10px;
+    border-radius: 5px;
+}
+#quadro-avaliacao .quadro-pro-contra strong{
+    color: #080;
+    line-height: 1.8em;
+}
+
+
+/* QUADRO PRODUTO VISITADO */
+#quadro-produto-visitado .container,
+#quadro-produto-semelhante .container{
+    background: #FFF;
+    padding-bottom: 15px;
+}
+#quadro-produto-visitado .quadro-listagem,
+#quadro-produto-semelhante .quadro-listagem{
+    border: solid 1px #DDD;
+    padding: 10px;
+}
+#quadro-produto-visitado .quadro-listagem .imagem-produto-interna,
+#quadro-produto-semelhante .quadro-listagem .imagem-produto-interna{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+#quadro-produto-visitado .owl-carousel .owl-controls .owl-nav .owl-next,
+#quadro-produto-semelhante .owl-carousel .owl-controls .owl-nav .owl-next {
+    right: 40px;
+}
+#quadro-produto-visitado .owl-carousel .owl-controls .owl-nav .owl-prev,
+#quadro-produto-semelhante .owl-carousel .owl-controls .owl-nav .owl-prev {
+    left: 40px;
+}
+#quadro-produto-visitado .item.lista-produtos,
+#quadro-produto-semelhante .item.lista-produtos{
+    padding: 0px 15px;
+}
+
+/* PÁGINA DE LOGIN E CADASTRO */
+#pagina-interna .tab-identificacao{
+    width: 50%;
+    float: left;
+    padding: 20px 0px;
+    background: #DDDDDD;
+    cursor: pointer;
+}
+#pagina-interna .tab-identificacao.tab-ativa{
+    border-top: solid 1px #e5ebee;
+    border-left: solid 1px #e5ebee;
+    border-right:  solid 1px #e5ebee;
+    background: #FFF;
+}
+#pagina-interna .tab-conteudo{
+    width: 100%;
+    float: left;
+    display: none;
+    border-right:  solid 1px #e5ebee;
+    border-left: solid 1px #e5ebee;
+    border-bottom:  solid 1px #e5ebee;
+    padding: 20px 0px;
+}
+#pagina-interna .tab-conteudo.tab-ativa{
+    display: block;
+}
+
+
+/* PÁGINA INTERNA DO PEDIDO */
+#pagina-interna .status-pedidos-sucesso{
+    color: #337AB7;
+}
+#pagina-interna .quadro-forma-pagamento{
+    min-height: 170px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+
+/* PÁGINA DE CARRINHO DE COMPRAS */
+#pagina-interna.pagina-carrinho .table > tbody > tr > td{
+    border-top: 1px solid #f2f2f2;
+}
+#pagina-interna.pagina-carrinho .table > thead > tr > th {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+
+/* PÁGINA DE FINALIZAÇÃO DA COMPRA */
+#rodape-finalizacao .container > .row{
+    background: #FFF;
+    padding-bottom: 15px;
+}
+#topo-finalizacao .logo{
+    margin: 15px 0px;
+}
+#topo-finalizacao .passos-compra{
+    margin-top: 15px;
+}
+#topo-finalizacao .passos-compra li {
+    width: 25%;
+    background: url('../_image/padrao/fundo-passos-finalizacao.jpg') no-repeat right;
+    background-size: 100% 3px;
+    background-position-y:  33%;
+    display: list-item;
+    float: left;
+}
+#topo-finalizacao .passos-compra li:nth-of-type(1) {
+    background: url('../_image/padrao/fundo-passos-finalizacao.jpg') no-repeat right;
+    background-size: 50% 3px;
+    background-position-y:  33%;
+}
+#topo-finalizacao .passos-compra li:nth-of-type(4) {
+    background: url('../_image/padrao/fundo-passos-finalizacao.jpg') no-repeat left;
+    background-size: 50% 3px;
+    background-position-y:  33%;
+}
+#topo-finalizacao .passos-compra li{
+    color: #000;
+}
+#topo-finalizacao .passos-compra li .icon{
+    width: 26px;
+    height: 26px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 5px 0px;
+    border-radius: 50%;
+    background: #FFF;
+}
+#topo-finalizacao .passos-compra li.ativo .icon{
+    background: #FFF;
+    color: #FFF;
+    padding: 5px 0px;
+}
+#pagina-interna.pagina-finalizacao{
+    padding: 0px;
+}
+#pagina-interna.pagina-finalizacao h2{
+    margin-top: 0px !important; 
+}
+#pagina-interna.pagina-finalizacao > .container > .row{
+    margin: 0px;
+    border-left: solid 1px #DDD;
+    border-right: solid 1px #DDD;
+}
+#pagina-interna.pagina-finalizacao .quadro-forma-entrega, 
+#pagina-interna.pagina-finalizacao .quadro-forma-pagamento{
+    border: solid 1px #DDD;
+    border-radius: 0px !important;
+}
+#pagina-interna.pagina-finalizacao .quadro-forma-pagamento .modal-content {
+    float: left;
+}
+#pagina-interna.pagina-finalizacao .quadro-endereco{
+    width: 100%;
+    display: block;
+    float: left;
+    margin-bottom: 10px;
+    border: solid 1px #DDD;
+    border-radius: 0px;
+} 
+#pagina-interna.pagina-finalizacao .modal-body {
+    display: block;
+    float: left;
+}
+#pagina-interna.pagina-finalizacao .quadro-forma-entrega{
+    min-height: 95px;
+}
+#pagina-interna.pagina-finalizacao .quadro-forma-entrega label{
+    margin-bottom: 0px;
+}
+#pagina-interna.pagina-finalizacao .quadro-dado-compra{
+    border-right: solid 1px #DDD;
+}
+#rodape-finalizacao{
+    margin-bottom: 15px;
+}
+#rodape-finalizacao > .container > .row{
+    margin: 0px;
+    padding-bottom: 15px;
+    border-right: solid 1px #DDD;
+    border-left: solid 1px #DDD;
+    border-bottom: solid 1px #DDD;
+}
+
+
+/* PÁGINA DE AGRADECIMENTO PELA COMPRA */
+#pagina-interna.compra-realizada .quadro-numero-pedido-retorno{
+    padding: 10px;
+}

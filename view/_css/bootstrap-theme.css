@@ -1,0 +1,92 @@
+/* MENU MIGALHA DE PÃO DO SITE */
+.breadcrumb {
+    background-color: #FFF !important;
+    border-bottom: 1px solid #f2f2f2 !important;
+    border-radius: 0px !important;
+}
+
+
+/* PERSONALIZAÇÃO GERAL PARA AS TABELAS DO SITE */
+.table > thead > tr > th, 
+.table > tbody > tr > th, 
+.table > tfoot > tr > th, 
+.table > thead > tr > td, 
+.table > tbody > tr > td, 
+.table > tfoot > tr > td {
+    vertical-align: middle !important;
+}
+
+
+/* PERSONALIZAÇÃO DA LINHA DIVISÓRIA PADRÃO */
+hr {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    border-color: #DDD !important;
+}
+
+
+/* PERSONALIZAÇÃO DO QUADRO DO COLAPSE */
+.well {
+    padding: 5px !important;
+    margin-bottom: 0px !important;
+    background-color: transparent !important;
+    border: 1px solid #DDD !important;
+    border-radius: 0px !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.well .alert {
+    padding: 7px 15px !important;
+}
+
+
+/* PERSONALIZAÇÃO DOS BOTÕES DO SITE */
+.btn {} /* FORMA E APARENCIA GERAL DO BOTÃO */
+
+.btn-default {} /* COR DO BOTÃO */
+.btn-default:focus,
+.btn-default.focus {} /* COR DO BOTÃO EM FOCUS */
+.btn-default:hover {} /* COR DO BOTÃO COM O MOUSE SOBRE */
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {}/* COR DO BOTÃO ATIVO */
+
+.btn-primary {} /* COR DO BOTÃO */
+.btn-primary:focus,
+.btn-primary.focus {} /* COR DO BOTÃO EM FOCUS */
+.btn-primary:hover {} /* COR DO BOTÃO COM O MOUSE SOBRE */
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {}/* COR DO BOTÃO ATIVO */
+
+.btn-success {} /* COR DO BOTÃO */
+.btn-success:focus,
+.btn-success.focus {} /* COR DO BOTÃO EM FOCUS */
+.btn-success:hover {} /* COR DO BOTÃO COM O MOUSE SOBRE */
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {}/* COR DO BOTÃO ATIVO */
+
+.btn-info {} /* COR DO BOTÃO */
+.btn-info:focus,
+.btn-info.focus {} /* COR DO BOTÃO EM FOCUS */
+.btn-info:hover {} /* COR DO BOTÃO COM O MOUSE SOBRE */
+.btn-info:active,
+.btn-info.active,
+.open > .dropdown-toggle.btn-info {}/* COR DO BOTÃO ATIVO */
+
+.btn-warning {} /* COR DO BOTÃO */
+.btn-warning:focus,
+.btn-warning.focus {} /* COR DO BOTÃO EM FOCUS */
+.btn-warning:hover {} /* COR DO BOTÃO COM O MOUSE SOBRE */
+.btn-warning:active,
+.btn-warning.active,
+.open > .dropdown-toggle.btn-warning {}/* COR DO BOTÃO ATIVO */
+
+.btn-danger {} /* COR DO BOTÃO */
+.btn-danger:focus,
+.btn-danger.focus {} /* COR DO BOTÃO EM FOCUS */
+.btn-danger:hover {} /* COR DO BOTÃO COM O MOUSE SOBRE */
+.btn-danger:active,
+.btn-danger.active,
+.open > .dropdown-toggle.btn-danger {}/* COR DO BOTÃO ATIVO */

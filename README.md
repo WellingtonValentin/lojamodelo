@@ -1,1 +1,1 @@
-# lojamodelo
+lojamodelo

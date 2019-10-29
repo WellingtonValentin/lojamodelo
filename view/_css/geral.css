@@ -1,0 +1,304 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,600,700|Roboto:400,300,500,700|Source+Sans+Pro:400,300,600,700|Oswald|Titillium+Web:400,300,600,700|Playfair+Display:400,700|Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Yesteryear);
+
+/* CLASSES DE TESTE E AJUDA */
+.border-teste{
+    border: solid 1px red;
+}
+.padding-0{
+    padding: 0px !important;
+}
+.margin-0{
+    margin: 0px !important;
+}
+.border-none{
+    border: none !important;
+}
+.radius-0{
+    border-radius: 0px !important;
+}
+.nowrap{
+    white-space: nowrap !important;
+}
+.cursor-pointer{
+    cursor: pointer !important;
+}
+.float-left{
+    float: left !important;
+}
+.float-right{
+    float: right !important;
+}
+.v-bottom{
+    display: table-cell !important;
+    vertical-align: bottom !important;
+}
+.v-center{
+    display: table-cell !important;
+    vertical-align: middle !important;
+}
+.v-top{
+    display: table-cell !important;
+    vertical-align: top !important;
+}
+.position-relative{
+    position:  relative !important;
+}
+.display-none{
+    display: none;
+}
+
+/* FONT FAMILY */
+.raleway{
+    font-family: 'Raleway', sans-serif !important;
+}
+.roboto{
+    font-family: 'Roboto', sans-serif !important;
+}
+.source{
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+.oswald{
+    font-family: 'Oswald', sans-serif !important;
+}
+.titillium{
+    font-family: 'Titillium Web', sans-serif !important;
+}
+.playfair{
+    font-family: 'Playfair Display', serif !important;
+}
+.montserrat{
+    font-family: 'Montserrat', sans-serif !important;
+}
+.yesteryear {
+    font-family: 'Yesteryear', cursive;
+}
+
+/*  FONT WEIGHT */
+.light{
+    font-weight: 300 !important;
+}
+.normal{
+    font-weight: normal !important;
+}
+.semi-bold{
+    font-weight: 600 !important;
+}
+.bold{
+    font-weight: bold !important;
+}
+
+/*  DECORAÇÕES DE TEXTO */
+.underline{
+    text-decoration: underline !important;
+}
+.linha-sobre{
+    text-decoration: line-through !important;
+}
+.uppercase{
+    text-transform: uppercase !important;
+}
+.no-decoration{
+    text-decoration: none !important;
+}
+.italic{
+    font-style: italic !important;
+}
+
+/* TAMANHOS DE FONT */
+.size-0-2{
+    font-size: 0.2em !important;
+    line-height: 1.4em;
+}
+.size-0-4{
+    font-size: 0.4em !important;
+    line-height: 1.4em;
+}
+.size-0-6{
+    font-size: 0.6em !important;
+    line-height: 1.4em;
+}
+.size-0-8{
+    font-size: 0.8em !important;
+    line-height: 1.4em;
+}
+.size-1{
+    font-size: 1em !important;
+    line-height: 1.4em;
+}
+.size-1-2{
+    font-size: 1.2em !important;
+    line-height: 1.4em;
+}
+.size-1-3{
+    font-size: 1.3em !important;
+    line-height: 1.4em;
+}
+.size-1-4{
+    font-size: 1.4em !important;
+    line-height: 1.4em;
+}
+.size-1-5{
+    font-size: 1.5em !important;
+    line-height: 1.4em;
+}
+.size-1-6{
+    font-size: 1.6em !important;
+    line-height: 1.4em;
+}
+.size-1-7{
+    font-size: 1.7em !important;
+    line-height: 1.4em;
+}
+.size-1-8{
+    font-size: 1.8em !important;
+    line-height: 1.4em;
+}
+.size-1-9{
+    font-size: 1.9em !important;
+    line-height: 1.4em;
+}
+.size-2{
+    font-size: 2em !important;
+    line-height: 1.4em;
+}
+.size-2-2{
+    font-size: 2.2em !important;
+    line-height: 1.4em;
+}
+.size-2-4{
+    font-size: 2.4em !important;
+    line-height: 1.4em;
+}
+.size-2-6{
+    font-size: 2.6em !important;
+    line-height: 1.4em;
+}
+.size-2-8{
+    font-size: 2.8em !important;
+    line-height: 1.4em;
+}
+.size-3{
+    font-size: 3em !important;
+    line-height: 1.4em;
+}
+.size-3-2{
+    font-size: 3.2em !important;
+    line-height: 1.4em;
+}
+.size-3-4{
+    font-size: 3.4em !important;
+    line-height: 1.4em;
+}
+.size-3-6{
+    font-size: 3.6em !important;
+    line-height: 1.4em;
+}
+.size-3-8{
+    font-size: 3.8em !important;
+    line-height: 1.4em;
+}
+.size-4{
+    font-size: 4em !important;
+    line-height: 1.4em;
+}
+.size-4-4{
+    font-size: 4.4em !important;
+    line-height: 1.4em;
+}
+.size-5{
+    font-size: 5em !important;
+    line-height: 1.4em;
+}
+.size-6{
+    font-size: 6em !important;
+    line-height: 1.4em; 
+}
+.size-7{
+    font-size: 7em !important;
+    line-height: 1.4em; 
+}
+.size-8{
+    font-size: 8em !important;
+    line-height: 1.4em; 
+}
+.size-9{
+    font-size: 9em !important;
+    line-height: 1.4em; 
+}
+
+/* CORES */
+.color-white{
+    color: #FFF !important;
+}
+.color-black{
+    color: #000 !important;
+}
+.color-light-yellow{
+    color: #ffe7a7 !important;
+}
+.color-yellow{
+    color: #fff156 !important;
+}
+.color-light-gray{
+    color: #93a4aa !important;
+}
+.color-gray{
+    color: #636363 !important;
+}
+.color-dark-gray{
+    color: #4a484a !important;
+}
+.color-light-green {
+    color: #239886 !important;
+}
+.color-green{
+    color: #1d9e88 !important;
+}
+.color-dark-green{
+    color: #1b6f66 !important;
+}
+.color-light-red{
+    color: #e55b58 !important;
+}
+.color-red{
+    color: #FF1613 !important;
+}
+.color-dark-red{
+    color: #EF6039 !important;
+}
+.color-light-blue{
+    color: #02baf2 !important;
+}
+.color-blue{
+    color: #2b68a5 !important;
+}
+.color-dark-blue{
+    color: #364347 !important;
+}
+.color-light-orange{
+    color: #fa8f67 !important;
+}
+.color-orange{
+    color: #eb866b !important;
+}
+.color-purple{
+    color: #925b95 !important;
+}
+.color-brown{
+    color: #976a55 !important;
+}
+
+/* CORES PADRÃO */
+.color-padrao{
+    color: #ed1c24 !important;
+}
+.background-padrao{
+    background-color: #e2e2e2 !important;
+}
+.color-contraste{
+    color: #5C5C5C !important;
+} /* UTILIZADO PRA FAZER CONTRASTE COM O BACKGROUND PADRÃO */
+.borda-padrao{
+    border-color: #e2e2e2 !important;
+}

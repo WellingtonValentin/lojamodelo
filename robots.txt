@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /cliente/login/cadastro/cadastre-se.html
+Disallow: /cliente/login/login.html
+Sitemap: http://www.lesense.com.br/sitemap.xml
